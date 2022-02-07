@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bio</string>
+    <string name="name">MacKenzie Healy</string>
+    <string name="my_bio">I started programming when I was 11, and it\'s been my passion ever since.
+    \nIn highschool I developed an Access Database for the Juvenile Assessment Center with Galveston ISD.
+    \nOnce I graduated, I became a programmer and systems analyst for Prologic Technology.
+    My main focus was writing SQL, Java, and Groovy scripts in the Student Data department.
+    \n\nMany years later, I have returned to school to pursue my Bachelors in Computer Science. Recently I have worked on the following projects:
+    \nFall Semester: Encryption program using Vigenere and Caesar Cipher Web crawler
+    \nSummer Semester: IOT device measuring and displaying object distance.
+    \nSpring Semester: Library Study Room Reservation System</string>
+    <string name="hobby_hint">Enter your hobbies.</string>
+    <string name="done_button">Done</string>
+    <string name="pic_description">Android Image</string>
+    <string name="auto_fill_hints">Guitar</string>
+</resources>
