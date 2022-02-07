@@ -14,8 +14,6 @@ import com.example.bio.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
-    private EditText enterHobbies;
-    private TextView hobbies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
