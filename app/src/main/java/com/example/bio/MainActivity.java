@@ -10,18 +10,24 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.bio.data.Bio;
 import com.example.bio.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
+    private final Bio bio = new Bio();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 //        setContentView(R.layout.activity_main);
 //        enterHobbies = findViewById(R.id.enterHobbies);
 //        hobbies = findViewById(R.id.hobbiesText);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+        bio.setName("MacKenzie");
+
+        binding.setBio(bio);
         binding.doneButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
     public void addHobbies(View view) {
 //        hobbies.setText("Hobbies: " + enterHobbies.getText().toString().trim());
 //        hobbies.setVisibility(View.VISIBLE);
-        binding.hobbiesText.setText("Hobbies: " + binding.enterHobbies.getText().toString().trim());
+        //bio.setHobbies("Pizza");
+        binding.invalidateAll();
+        bio.setHobbies("Hobbies: " + binding.enterHobbies.getText().toString().trim());
+        //binding.hobbiesText.setText("Hobbies: " + binding.enterHobbies.getText().toString().trim());
         binding.hobbiesText.setVisibility(View.VISIBLE);
 
         //hide keyboard
